@@ -4,33 +4,39 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> | 
       <router-link to="/login">Login</router-link> |
-      <router-link to="/register">Register</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 
 <style lang="scss">
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  margin-top: 70px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding-bottom: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+  font-weight: bold;
+
+  #nav {
+    margin-top: -70px;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 20px;
+    background-color: #3d3d3d;
+    a {
+      font-weight: bold;
+      color: white;
+      &.router-link-exact-active {
+        color: #42b983;
+      }
     }
   }
 }
